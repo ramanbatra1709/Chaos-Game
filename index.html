@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chaos Game</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+		<link rel="shortcut icon" href="./img/favicon.gif" />
+	</head>
+	<body>
+		<h3><a href="https://en.wikipedia.org/wiki/Chaos_game" target="_blank">Chaos Game</a></h3>
+		<p>It is a method of creating a fractal, using a polygon and an initial point selected at random inside it</p>
+		<input id="input_num" type="number" min="0" max="20" placeholder="Number of vertices" onchange="getCoordinates();"/>
+		<span id="span_coords">
+			<p id="p_coords"></p>
+		</span>
+		<span id="span_count">
+			<p id="p_count"></p>
+		</span>
+		<canvas id="cnvs_out" height="400" width="500" onmousemove="showCoords(event);" onclick="getVertices(event);"></canvas>
+		<p id="p_msg"><i>Enter number of vertices</i></p>
+		<input id="btn_start" type="button" value="Start" onclick="start();"/>
+		<script type="text/javascript" src="./chaos.js"></script>
+	</body>
+</html>
