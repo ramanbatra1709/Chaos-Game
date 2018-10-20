@@ -1,0 +1,24 @@
+*	{
+	font-family: helvetica;
+	margin: 5px;
+}
+input	{
+	display: block;
+	padding: 5px;
+	font-size: 100%;
+	width: 16%;
+}
+canvas	{
+	border: 1px solid #c3c3c3;
+	cursor: crosshair;
+}
+span	{
+	position: absolute;
+	font-size: 60%;
+}
+#span_coords	{
+	left: 1%;
+}
+#span_count	{
+	left: 8%;
+}
